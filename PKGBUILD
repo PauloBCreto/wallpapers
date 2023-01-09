@@ -21,7 +21,7 @@ package() {
 
   install -d "${pkgdir}"/usr/share/backgrounds/"${pkgbasename}"
 
-  cp -dr --no-preserve=ownership {dithered,gradients,landscapes,mandelbrot,minimalistic,misc,os,patterns,solids,waves} "${pkgdir}"/usr/share/backgrounds/"${pkgbasename}"
+  cp -dr --no-preserve=ownership "${pkgdir}"/usr/share/backgrounds/"${pkgbasename}"
 
   install -Dm644 LICENSE -t "$pkgdir"/usr/share/licenses/"$pkgbasename"/
 }
